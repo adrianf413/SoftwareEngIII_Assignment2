@@ -1,0 +1,8 @@
+language: java
+
+jdk:
+  - jdk13
+
+build:
+  ci:
+    - mvn clean install
