@@ -10,4 +10,10 @@ after_success:
    - mvn test
 
 
-
+integrations:
+  notifications:
+    - integrationName: email
+      type: email
+      recipients:
+        - adrianforde4@gmail.com
+        - a.forde23@nuigalway.ie
