@@ -10,7 +10,4 @@ after_success:
    - mvn test
 
 
-notifications:
-  email:
-      recipients:
-	  a.forde23@nuigalway.ie
+
