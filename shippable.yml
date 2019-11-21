@@ -13,5 +13,4 @@ after_success:
 notifications:
   email:
       recipients:
-         - adrianforde4@gmail.com
-	 - a.forde23@nuigalway.ie
+	  a.forde23@nuigalway.ie
