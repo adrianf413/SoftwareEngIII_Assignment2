@@ -6,7 +6,9 @@ public class CourseProgramme {
     String course_start_date;
     String course_end_date;
 
-    public CourseProgramme(String name, Module[] modules, Student[] enrolled_students, String course_start_date, String course_end_date) {
+    //, Module[] modules, Student[] enrolled_students, String course_start_date, String course_end_date
+
+    public CourseProgramme(String name) {
         this.name = name;
         this.modules = modules;
         this.enrolled_students = enrolled_students;

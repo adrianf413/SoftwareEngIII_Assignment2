@@ -11,17 +11,17 @@ public class Student {
     CourseProgramme course;
     Module[] modules;
 
-    public String getUsername(){
-        //method to generate students username combining their name and age
-        return name + "_" + Integer.toString(age);
-    }
-
     public Student(String name, int age, String date_of_birth, int id, CourseProgramme course) {
         this.name = name;
         this.age = age;
         this.date_of_birth = date_of_birth;
         this.id = id;
         this.course = course;
+    }
+
+    public String getUsername(){
+        //method to generate students username combining their name and age and removing whitespace
+        return name.replaceAll("\\s+","") + "_" + Integer.toString(age);
     }
 
     public String getName() {
