@@ -1,17 +1,20 @@
-import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 
 public class Student {
 
     String name;
     int age;
-    DateTime date;
-    String date_of_birth; //Will use data type for this
+    LocalDate date_of_birth;
     int id;
     String username;
     CourseProgramme course;
     Module[] modules;
 
-    public Student(String name, int age, String date_of_birth, int id, CourseProgramme course) {
+    public Student(String name){
+        this.name = name;
+    }
+
+    public Student(String name, int age, LocalDate date_of_birth, int id, CourseProgramme course) {
         this.name = name;
         this.age = age;
         this.date_of_birth = date_of_birth;
@@ -40,11 +43,11 @@ public class Student {
         this.age = age;
     }
 
-    public String getDate_of_birth() {
+    public LocalDate getDate_of_birth() {
         return date_of_birth;
     }
 
-    public void setDate_of_birth(String date_of_birth) {
+    public void setDate_of_birth(LocalDate date_of_birth) {
         this.date_of_birth = date_of_birth;
     }
 
