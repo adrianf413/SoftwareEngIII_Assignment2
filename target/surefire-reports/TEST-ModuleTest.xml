@@ -63,9 +63,9 @@
   <testcase classname="ModuleTest" name="getName" time="0"/>
   <testcase classname="ModuleTest" name="setName" time="0"/>
   <testcase classname="ModuleTest" name="getId" time="0"/>
-  <testcase classname="ModuleTest" name="setEnrolled_students" time="0"/>
   <testcase classname="ModuleTest" name="getEnrolled_students" time="0"/>
+  <testcase classname="ModuleTest" name="setEnrolled_students" time="0"/>
   <testcase classname="ModuleTest" name="setId" time="0"/>
-  <testcase classname="ModuleTest" name="setAssociated_courses" time="0"/>
   <testcase classname="ModuleTest" name="getAssociated_courses" time="0"/>
+  <testcase classname="ModuleTest" name="setAssociated_courses" time="0"/>
 </testsuite>

@@ -63,14 +63,14 @@
   <testcase classname="StudentTest" name="getName" time="0"/>
   <testcase classname="StudentTest" name="setName" time="0"/>
   <testcase classname="StudentTest" name="getId" time="0"/>
+  <testcase classname="StudentTest" name="setId" time="0"/>
+  <testcase classname="StudentTest" name="setAge" time="0"/>
+  <testcase classname="StudentTest" name="setDate_of_birth" time="0"/>
+  <testcase classname="StudentTest" name="setCourse" time="0"/>
+  <testcase classname="StudentTest" name="getAge" time="0"/>
+  <testcase classname="StudentTest" name="getUsername" time="0"/>
+  <testcase classname="StudentTest" name="getDate_of_birth" time="0"/>
+  <testcase classname="StudentTest" name="getCourse" time="0"/>
   <testcase classname="StudentTest" name="setModules" time="0"/>
   <testcase classname="StudentTest" name="getModules" time="0"/>
-  <testcase classname="StudentTest" name="setId" time="0"/>
-  <testcase classname="StudentTest" name="getCourse" time="0"/>
-  <testcase classname="StudentTest" name="getAge" time="0"/>
-  <testcase classname="StudentTest" name="getDate_of_birth" time="0"/>
-  <testcase classname="StudentTest" name="setCourse" time="0"/>
-  <testcase classname="StudentTest" name="setDate_of_birth" time="0"/>
-  <testcase classname="StudentTest" name="getUsername" time="0"/>
-  <testcase classname="StudentTest" name="setAge" time="0"/>
 </testsuite>

@@ -21,7 +21,7 @@ public class Student {
 
     public String getUsername(){
         //method to generate students username combining their name and age and removing whitespace
-        return name.replaceAll("\\s+","") + "_" + Integer.toString(age);
+        return getName().replaceAll("\\s+","") + "_" + Integer.toString(getAge());
     }
 
     public String getName() {
