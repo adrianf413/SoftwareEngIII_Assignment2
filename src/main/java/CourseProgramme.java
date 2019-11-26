@@ -1,12 +1,22 @@
+import org.joda.time.LocalDate;
+
 public class CourseProgramme {
 
     String name;
     Module[] modules;
     Student[] enrolled_students;
-    String course_start_date;
-    String course_end_date;
+    LocalDate course_start_date;
+    LocalDate course_end_date;
 
-    public CourseProgramme(String name, Module[] modules, Student[] enrolled_students, String course_start_date, String course_end_date) {
+    public CourseProgramme() {
+
+    }
+
+    public CourseProgramme(String name) {
+        this.name = name;
+    }
+
+    public CourseProgramme(String name, Module[] modules, Student[] enrolled_students, LocalDate course_start_date, LocalDate course_end_date) {
         this.name = name;
         this.modules = modules;
         this.enrolled_students = enrolled_students;
@@ -38,19 +48,19 @@ public class CourseProgramme {
         this.enrolled_students = enrolled_students;
     }
 
-    public String getCourse_start_date() {
+    public LocalDate getCourse_start_date() {
         return course_start_date;
     }
 
-    public void setCourse_start_date(String course_start_date) {
+    public void setCourse_start_date(LocalDate course_start_date) {
         this.course_start_date = course_start_date;
     }
 
-    public String getCourse_end_date() {
+    public LocalDate getCourse_end_date() {
         return course_end_date;
     }
 
-    public void setCourse_end_date(String course_end_date) {
+    public void setCourse_end_date(LocalDate course_end_date) {
         this.course_end_date = course_end_date;
     }
 }
