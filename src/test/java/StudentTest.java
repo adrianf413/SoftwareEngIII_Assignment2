@@ -7,8 +7,12 @@ public class StudentTest {
     @Before
     public void setUp() throws Exception {
         CourseProgramme engineering = new CourseProgramme("Engineering");
+        Module[] modules = new Module[3];
+        for(int i = 0;i < 3;i++){
+            modules[i] = new Module("Arbitrary Name");
+        }
         LocalDate date = new LocalDate(1998, 4, 2);
-        test_student = new Student("Adrian Forde", 21, date, 12345678, engineering);
+        test_student = new Student("Adrian Forde", 21, date, 12345678, engineering, modules);
     }
 
     @Test
