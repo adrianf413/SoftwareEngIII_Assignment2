@@ -1,10 +1,5 @@
-import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 import org.junit.*;
-//import org.junit.Assert.*;
-import org.joda.*;
 
 public class StudentTest {
     Student test_student;
@@ -51,6 +46,10 @@ public class StudentTest {
     public void getAge() {
         //test student initialised to 21
         Assert.assertEquals( 21, test_student.getAge());
+
+        // set new age and check again
+        test_student.setAge(22);
+        Assert.assertEquals( 22, test_student.getAge());
     }
 
     @Test
@@ -65,12 +64,26 @@ public class StudentTest {
 
     @Test
     public void getDate_of_birth() {
-        Assert.assertEquals(1, 1);
+        // test student was initialised to dob of 2/4/1998
+        LocalDate test_date = new LocalDate(1998, 4, 2);
+        Assert.assertEquals(test_date, test_student.getDate_of_birth());
+
+        // change the date and check again
+        test_date = new LocalDate(1999, 8, 14);
+        test_student.setDate_of_birth(test_date);
+        Assert.assertEquals(test_date, test_student.getDate_of_birth());
     }
 
     @Test
     public void setDate_of_birth() {
-        Assert.assertEquals(1, 1);
+        // test student was initialised to dob of 2/4/1998
+        LocalDate test_date = new LocalDate(1998, 4, 2);
+        Assert.assertEquals(test_date, test_student.getDate_of_birth());
+
+        // change the date and check again
+        test_date = new LocalDate(1999, 8, 14);
+        test_student.setDate_of_birth(test_date);
+        Assert.assertEquals(test_date, test_student.getDate_of_birth());
     }
 
     @Test

@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 public class CourseProgrammeTest {
 
     CourseProgramme test_course;
+
     @Before
     public void setUp() throws Exception {
         //Set up a Course Program object for testing purposes
@@ -51,18 +52,22 @@ public class CourseProgrammeTest {
 
     @Test
     public void getModules() {
+
     }
 
     @Test
     public void setModules() {
+
     }
 
     @Test
     public void getEnrolled_students() {
+
     }
 
     @Test
     public void setEnrolled_students() {
+
     }
 
     @Test
