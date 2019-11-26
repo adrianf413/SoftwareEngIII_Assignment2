@@ -9,6 +9,14 @@ before_install:
 after_success:
    - mvn test
 
+build:
+  ci:
+    # mvn install will create a `target` folder which will contain a jacoco.xml
+    # jacoco.xml will be present at path `target/site/jacoco/`
+    - mvn clean test
+
+    # copy this file to the `shippable/codecoverage` folder
+    - cp target/site/jacoco/jacoco.xml shippable/codecoverage
 
 integrations:
   notifications:
