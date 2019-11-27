@@ -14,12 +14,13 @@ public class Student {
         this.name = name;
     }
 
-    public Student(String name, int age, LocalDate date_of_birth, int id, CourseProgramme course) {
+    public Student(String name, int age, LocalDate date_of_birth, int id, CourseProgramme course, Module[] modules) {
         this.name = name;
         this.age = age;
         this.date_of_birth = date_of_birth;
         this.id = id;
         this.course = course;
+        this.modules = modules;
     }
 
     public String getUsername(){

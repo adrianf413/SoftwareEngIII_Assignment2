@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Student.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SoftwareEngIII_assignment2</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Student.java</span></div><h1>Student.java</h1><pre class="source lang-java linenums">import org.joda.time.LocalDate;
+
+public class Student {
+
+    String name;
+    int age;
+    LocalDate date_of_birth;
+    int id;
+    String username;
+    CourseProgramme course;
+    Module[] modules;
+
+<span class="fc" id="L13">    public Student(String name){</span>
+<span class="fc" id="L14">        this.name = name;</span>
+<span class="fc" id="L15">    }</span>
+
+<span class="fc" id="L17">    public Student(String name, int age, LocalDate date_of_birth, int id, CourseProgramme course, Module[] modules) {</span>
+<span class="fc" id="L18">        this.name = name;</span>
+<span class="fc" id="L19">        this.age = age;</span>
+<span class="fc" id="L20">        this.date_of_birth = date_of_birth;</span>
+<span class="fc" id="L21">        this.id = id;</span>
+<span class="fc" id="L22">        this.course = course;</span>
+<span class="fc" id="L23">        this.modules = modules;</span>
+<span class="fc" id="L24">    }</span>
+
+    public String getUsername(){
+        //method to generate students username combining their name and age and removing whitespace
+<span class="fc" id="L28">        return getName().replaceAll(&quot;\\s+&quot;,&quot;&quot;) + &quot;_&quot; + Integer.toString(getAge());</span>
+    }
+
+    public String getName() {
+<span class="fc" id="L32">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="fc" id="L36">        this.name = name;</span>
+<span class="fc" id="L37">    }</span>
+
+    public int getAge() {
+<span class="fc" id="L40">        return age;</span>
+    }
+
+    public void setAge(int age) {
+<span class="fc" id="L44">        this.age = age;</span>
+<span class="fc" id="L45">    }</span>
+
+    public LocalDate getDate_of_birth() {
+<span class="fc" id="L48">        return date_of_birth;</span>
+    }
+
+    public void setDate_of_birth(LocalDate date_of_birth) {
+<span class="fc" id="L52">        this.date_of_birth = date_of_birth;</span>
+<span class="fc" id="L53">    }</span>
+
+    public int getId() {
+<span class="fc" id="L56">        return id;</span>
+    }
+
+    public void setId(int id) {
+<span class="fc" id="L60">        this.id = id;</span>
+<span class="fc" id="L61">    }</span>
+
+    public CourseProgramme getCourse() {
+<span class="fc" id="L64">        return course;</span>
+    }
+
+    public void setCourse(CourseProgramme course) {
+<span class="fc" id="L68">        this.course = course;</span>
+<span class="fc" id="L69">    }</span>
+
+    public Module[] getModules() {
+<span class="fc" id="L72">        return modules;</span>
+    }
+
+    public void setModules(Module[] modules) {
+<span class="fc" id="L76">        this.modules = modules;</span>
+<span class="fc" id="L77">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

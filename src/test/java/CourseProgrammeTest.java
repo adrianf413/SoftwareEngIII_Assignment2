@@ -9,13 +9,14 @@ import static org.junit.Assert.*;
 public class CourseProgrammeTest {
 
     CourseProgramme test_course;
+    Module[] modules = new Module[5];
+    Student[] students = new Student[5];
 
     @Before
     public void setUp() throws Exception {
         //Set up a Course Program object for testing purposes
         //String name, Module[] modules, Student[] enrolled_students, LocalDate course_start_date, LocalDate course_end_date
-        Module[] modules = new Module[5];
-        Student[] students = new Student[5];
+
         for(int i = 0; i < 5;i++){
             modules[i] = new Module("Arbitrary Name");
             students[i] = new Student("Arbitrary Name");
@@ -52,22 +53,45 @@ public class CourseProgrammeTest {
 
     @Test
     public void getModules() {
+        // should return an array of the enrolled students
+        // test module was initialised with the list of students outlined above
+
+        Assert.assertEquals(modules, test_course.getModules());
 
     }
 
     @Test
     public void setModules() {
-
+        // should update the array of enrolled students
+        // Need to create a new list of modules
+        Module[] modules_new = new Module[5];
+        for(int i = 0; i < 5; i++){
+            modules_new[i] = new Module("Arbitrary Name");
+        }
+        test_course.setModules(modules_new);
+        // Checking that the set method successfully updated
+        Assert.assertEquals(modules_new, test_course.getModules());
     }
 
     @Test
     public void getEnrolled_students() {
+        // should return an array of the enrolled students
+        // test module was initialised with the list of students outlined above
 
+        Assert.assertEquals(students, test_course.getEnrolled_students());
     }
 
     @Test
     public void setEnrolled_students() {
-
+        // should update the array of enrolled students
+        // Need to create a new list of students
+        Student[] students_new = new Student[5];
+        for(int i = 0; i < 5; i++){
+            students_new[i] = new Student("Arbitrary Name");
+        }
+        test_course.setEnrolled_students(students_new);
+        // Checking that the set method successfully updated
+        Assert.assertEquals(students_new, test_course.getEnrolled_students());
     }
 
     @Test
