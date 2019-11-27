@@ -63,7 +63,7 @@ public class CourseProgrammeTest {
     @Test
     public void setModules() {
         // should update the array of enrolled students
-        // Need to create a new list of students
+        // Need to create a new list of modules
         Module[] modules_new = new Module[5];
         for(int i = 0; i < 5; i++){
             modules_new[i] = new Module("Arbitrary Name");

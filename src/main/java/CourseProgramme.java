@@ -8,10 +8,6 @@ public class CourseProgramme {
     LocalDate course_start_date;
     LocalDate course_end_date;
 
-    public CourseProgramme() {
-
-    }
-
     public CourseProgramme(String name) {
         this.name = name;
     }

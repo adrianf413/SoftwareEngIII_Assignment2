@@ -8,48 +8,49 @@
 <span class="fc" id="L8">    public Module(String name){</span>
 <span class="fc" id="L9">        this.name = name;</span>
 <span class="fc" id="L10">    }</span>
+    /*
+    public Module(String name, int id){
+        this.name = name;
+        this.id = id;
+    }*/
 
-<span class="nc" id="L12">    public Module(String name, int id){</span>
-<span class="nc" id="L13">        this.name = name;</span>
-<span class="nc" id="L14">        this.id = id;</span>
-<span class="nc" id="L15">    }</span>
-<span class="fc" id="L16">    public Module(String name, int id, Student[] enrolled_students, CourseProgramme[] associated_courses) {</span>
-<span class="fc" id="L17">        this.name = name;</span>
-<span class="fc" id="L18">        this.id = id;</span>
-<span class="fc" id="L19">        this.enrolled_students = enrolled_students;</span>
-<span class="fc" id="L20">        this.associated_courses = associated_courses;</span>
-<span class="fc" id="L21">    }</span>
+<span class="fc" id="L17">    public Module(String name, int id, Student[] enrolled_students, CourseProgramme[] associated_courses) {</span>
+<span class="fc" id="L18">        this.name = name;</span>
+<span class="fc" id="L19">        this.id = id;</span>
+<span class="fc" id="L20">        this.enrolled_students = enrolled_students;</span>
+<span class="fc" id="L21">        this.associated_courses = associated_courses;</span>
+<span class="fc" id="L22">    }</span>
 
     public String getName() {
-<span class="fc" id="L24">        return name;</span>
+<span class="fc" id="L25">        return name;</span>
     }
 
     public void setName(String name) {
-<span class="fc" id="L28">        this.name = name;</span>
-<span class="fc" id="L29">    }</span>
+<span class="fc" id="L29">        this.name = name;</span>
+<span class="fc" id="L30">    }</span>
 
     public int getId() {
-<span class="fc" id="L32">        return id;</span>
+<span class="fc" id="L33">        return id;</span>
     }
 
     public void setId(int id) {
-<span class="fc" id="L36">        this.id = id;</span>
-<span class="fc" id="L37">    }</span>
+<span class="fc" id="L37">        this.id = id;</span>
+<span class="fc" id="L38">    }</span>
 
     public Student[] getEnrolled_students() {
-<span class="fc" id="L40">        return enrolled_students;</span>
+<span class="fc" id="L41">        return enrolled_students;</span>
     }
 
     public void setEnrolled_students(Student[] enrolled_students) {
-<span class="fc" id="L44">        this.enrolled_students = enrolled_students;</span>
-<span class="fc" id="L45">    }</span>
+<span class="fc" id="L45">        this.enrolled_students = enrolled_students;</span>
+<span class="fc" id="L46">    }</span>
 
     public CourseProgramme[] getAssociated_courses() {
-<span class="fc" id="L48">        return associated_courses;</span>
+<span class="fc" id="L49">        return associated_courses;</span>
     }
 
     public void setAssociated_courses(CourseProgramme[] associated_courses) {
-<span class="fc" id="L52">        this.associated_courses = associated_courses;</span>
-<span class="fc" id="L53">    }</span>
+<span class="fc" id="L53">        this.associated_courses = associated_courses;</span>
+<span class="fc" id="L54">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

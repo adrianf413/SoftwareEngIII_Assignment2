@@ -3,9 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="5f08e8fd-4121-40f5-a68d-75e9ab543fe6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourseProgramme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SoftwareEngIII_assignment2-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SoftwareEngIII_assignment2-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/CourseProgramme.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/CourseProgramme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/CourseProgramme.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/CourseProgramme.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Module.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/Module.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Module.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/Module.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/CourseProgrammeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CourseProgrammeTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/ModuleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ModuleTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/StudentTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/StudentTest.txt" afterDir="false" />

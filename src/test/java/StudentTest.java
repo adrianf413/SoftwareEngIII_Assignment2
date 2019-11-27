@@ -3,11 +3,12 @@ import org.junit.*;
 
 public class StudentTest {
     Student test_student;
+    Module[] modules = new Module[3];
 
     @Before
     public void setUp() throws Exception {
         CourseProgramme engineering = new CourseProgramme("Engineering");
-        Module[] modules = new Module[3];
+
         for(int i = 0;i < 3;i++){
             modules[i] = new Module("Arbitrary Name");
         }
@@ -22,6 +23,10 @@ public class StudentTest {
         //System.out.println(test_student.getUsername());
         Assert.assertEquals(test_username, test_student.getUsername());
 
+        Student test_student_new =  new Student("Steve McQueen");
+        test_student_new.setAge(30);
+        String test_username_new = "SteveMcQueen_30";
+        Assert.assertEquals(test_username_new, test_student_new.getUsername());
     }
 
     @Test
@@ -29,7 +34,7 @@ public class StudentTest {
         //test_student initialised with name Adrian Forde
         Assert.assertEquals( "Adrian Forde", test_student.getName());
 
-        //set new name and check again
+        //set new name and check getter again
         test_student.setName("Steve McQueen");
         Assert.assertEquals( "Steve McQueen", test_student.getName());
     }
@@ -129,11 +134,22 @@ public class StudentTest {
 
     @Test
     public void getModules() {
-        Assert.assertEquals(1, 1);
+        // should return an array of the enrolled students
+        // test module was initialised with the list of students outlined above
+
+        Assert.assertEquals(modules, test_student.getModules());
     }
 
     @Test
     public void setModules() {
-        Assert.assertEquals(1, 1);
+        // should update the array of enrolled students
+        // Need to create a new list of modules
+        Module[] modules_new = new Module[5];
+        for(int i = 0; i < 5; i++){
+            modules_new[i] = new Module("Arbitrary Name");
+        }
+        test_student.setModules(modules_new);
+        // Checking that the set method successfully updated
+        Assert.assertEquals(modules_new, test_student.getModules());
     }
 }
