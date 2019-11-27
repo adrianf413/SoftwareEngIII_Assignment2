@@ -7,15 +7,15 @@ import static org.junit.Assert.*;
 
 public class ModuleTest {
     Module test_module;
+    Student[] students = new Student[5];
+    CourseProgramme[] courses = new CourseProgramme[5];
 
     @Before
     public void setUp() throws Exception {
         //Need to create arbitrary arrays of module and course program objects
-        Student[] students = new Student[5];
         for(int i = 0; i < 5; i++){
             students[i] = new Student("Adrian Forde");
         }
-        CourseProgramme[] courses = new CourseProgramme[5];
 
         for(int j =0; j < 5; j++){
             courses[j] = new CourseProgramme("Engineering");
@@ -70,17 +70,43 @@ public class ModuleTest {
 
     @Test
     public void getEnrolled_students() {
+        // should return an array of the enrolled students
+        // test module was initialised with the list of students outlined above
+
+        Assert.assertEquals(students, test_module.getEnrolled_students());
     }
 
     @Test
     public void setEnrolled_students() {
+        // should update the array of enrolled students
+        // Need to create a new list of students
+        Student[] students_new = new Student[5];
+        for(int i = 0; i < 5; i++){
+            students_new[i] = new Student("Arbitrary Name");
+        }
+        test_module.setEnrolled_students(students_new);
+        // Checking that the set method successfully updated
+        Assert.assertEquals(students_new, test_module.getEnrolled_students());
     }
 
     @Test
     public void getAssociated_courses() {
+        // should return an array of the associated courses
+        // test module was initialised with the list of courses outlined above
+
+        Assert.assertEquals(courses, test_module.getAssociated_courses());
     }
 
     @Test
     public void setAssociated_courses() {
+        // should update the array of associated courses
+        // Need to create a new list of courses
+        CourseProgramme[] courses_new = new CourseProgramme[5];
+        for(int j =0; j < 5; j++){
+            courses_new[j] = new CourseProgramme("Science");
+        }
+        test_module.setAssociated_courses(courses_new);
+        // Checking that the set method successfully updated
+        Assert.assertEquals(courses_new, test_module.getAssociated_courses());
     }
 }
